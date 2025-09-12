@@ -1,0 +1,12 @@
+.side-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0.5em;
+  gap: 1em;
+  right: 0.5em;
+}
+.side-icons img {
+  width: 60px;
+  height: 60px;
+}

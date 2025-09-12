@@ -1,0 +1,15 @@
+.procedures-tags-list {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+  width: 60%;
+  margin: 0 auto;
+  padding-left: 2em;
+}
+.procedures-tags-list-item {
+  background-color: red;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 1em;
+  font-size: 1em;
+}

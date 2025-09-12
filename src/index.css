@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #bd96ae;
+}
+
+ul {
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  /* esse é o do index.html */
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  flex: 1; /* ocupa o espaço entre header e footer */
+  display: flex;
+  flex-direction: column;
+}

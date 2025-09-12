@@ -1,0 +1,44 @@
+.card-about-ozone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  border-radius: 12px;
+  padding: 2rem;
+  color: white;
+  margin: 2rem;
+  width: 60%;
+}
+.card-ozone {
+  margin-left: auto;
+}
+.card-paragraph {
+  flex: 1;
+  padding: 1rem;
+}
+
+.card-paragraph h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-paragraph p {
+  line-height: 1.6;
+}
+
+.card-paragraph blockquote {
+  font-weight: bold;
+  margin: 1.5rem 0;
+  font-style: italic;
+}
+
+.card-figure {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.card-figure img {
+  max-width: 400px;
+  border-radius: 8px;
+}

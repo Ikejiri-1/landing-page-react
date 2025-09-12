@@ -1,0 +1,35 @@
+.cards-container {
+  display: flex;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: red;
+  margin: 2em;
+  border-radius: 1em;
+}
+
+.card {
+  width: 60%;
+  padding: 1em 2em 3em 2em;
+}
+
+.card-1 {
+  margin: 2em auto;
+}
+.card-3 {
+  margin-left: auto;
+}
+.card-title {
+  font-size: 2em;
+  margin: 1em 0;
+}
+.card-text {
+  font-size: 1.2em;
+  line-height: 150%;
+  padding: 0 4em;
+}
