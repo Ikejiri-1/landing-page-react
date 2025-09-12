@@ -25,9 +25,10 @@ const slugify = (text: string) => {
   return text
     .toLowerCase()
     .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\s+/g, "-")
-    .replace(/[^\w-]/g, "");
+    .replace(/[\u0300-\u036f]/g, "") // Remove acentos
+    .replace(/\s+/g, "-") // Substitui espaços por traços
+    .replace(/[^\w-]+/g, "") // Remove caracteres não alfanuméricos, exceto traços
+    .replace(/^-+|-+$/g, ""); // Remove traços do início e do final
 };
 export function Header() {
   const location = useLocation();
