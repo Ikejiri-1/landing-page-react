@@ -1,6 +1,6 @@
 import { Formik } from "formik";
 import * as Yup from "yup";
-
+import "./Form.css";
 interface FormValues {
   username: string;
   tel: string;
@@ -40,7 +40,7 @@ export function Form() {
         handleSubmit,
         isSubmitting,
       }) => (
-        <form onSubmit={handleSubmit}>
+        <form className="form-container" onSubmit={handleSubmit}>
           <div>
             <input
               type="text"

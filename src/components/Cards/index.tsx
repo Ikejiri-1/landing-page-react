@@ -8,6 +8,7 @@ interface CardData {
   className?: string;
   strongText?: string;
   assign?: string;
+  children?: React.ReactNode;
 }
 
 interface CardsProps {
@@ -23,6 +24,7 @@ export function Cards({ cards }: CardsProps) {
             {card.image && (
               <img src={card.image} className="img-card" alt={card.title} />
             )}
+
             <div>
               <h2 className="card-title">{card.title}</h2>
               <p className={`card-text ${card.className || ""}`}>{card.text}</p>
@@ -33,6 +35,7 @@ export function Cards({ cards }: CardsProps) {
               )}
               {card.assign && <p className="assign">{card.assign}</p>}
             </div>
+            {card.children}
           </li>
         ))}
       </ul>

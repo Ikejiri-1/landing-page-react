@@ -28,6 +28,13 @@ const cardsContent = [
     text: "Fortalecimento do sistema imunológico\n Alívio de dores crônicas\n Melhora da circulação sanguínea e oxigenação dos tecidos\n Auxílio no controle da glicemia em pacientes diabéticos\n Ação anti-inflamatória e analgésica natural\n Redução do estresse oxidativo e combate aos radicais livres",
     className: "multiline-text",
   },
+  {
+    id: 5,
+    title:
+      "Agende uma consulta e descubra como a ozonioterapia pode transformar sua vida!",
+    text: "",
+    children: <Form />,
+  },
 ];
 
 export function Home() {
@@ -55,9 +62,6 @@ export function Home() {
 
         <div className="cards-container">
           <Cards cards={cardsContent}></Cards>
-        </div>
-        <div className="form-container">
-          <Form></Form>
         </div>
       </main>
     </>

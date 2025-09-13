@@ -1,0 +1,25 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 2em auto;
+}
+.form-container input {
+  padding: 0.5em;
+  border-radius: 0.5em;
+  border: 2px solid #ccc;
+  font-size: 1em;
+}
+.form-container input::placeholder {
+  color: red;
+}
+.form-container button {
+  padding: 0.7em;
+  border-radius: 0.5em;
+  border: 2px solid #ccc;
+  cursor: pointer;
+}
+.form-container button:hover {
+  background-color: black;
+  color: #ccc;
+}
