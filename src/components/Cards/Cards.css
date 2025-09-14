@@ -1,6 +1,5 @@
 .cards-container {
-  display: flex;
-  width: 100%;
+  width: 100vw;
 }
 
 .card {
@@ -77,4 +76,45 @@
   padding-top: 6em;
   text-align: end;
   padding-right: 2em;
+}
+.card-8,
+.card-9,
+.card-10,
+.card-11,
+.card-12,
+.card-13,
+.card-14,
+.card-15,
+.card-16,
+.card-17,
+.card-18,
+.card-19,
+.card-20,
+.card-21,
+.card-22,
+.card-23,
+.card-24,
+.card-25 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  width: 60%;
+  align-items: center;
+  padding: 3em 2em;
+}
+.card-9,
+.card-11,
+.card-13,
+.card-15,
+.card-17,
+.card-19,
+.card-21,
+.card-23,
+.card-24,
+.card-25 {
+  margin-left: auto;
+  padding: 2em 4em;
+}
+.img-card img {
+  width: 300px;
+  height: 350px;
 }

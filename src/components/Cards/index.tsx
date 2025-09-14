@@ -22,7 +22,9 @@ export function Cards({ cards }: CardsProps) {
         {cards.map((card) => (
           <li key={card.id} className={`card card-${card.id}`}>
             {card.image && (
-              <img src={card.image} className="img-card" alt={card.title} />
+              <figure className="img-card">
+                <img src={card.image} className="img-card" alt={card.title} />
+              </figure>
             )}
 
             <div>
