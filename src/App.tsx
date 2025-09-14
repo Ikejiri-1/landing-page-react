@@ -1,14 +1,19 @@
 import "./App.css";
+import { Loader } from "./components/Loader/loading";
 
-import { BrowserRouter } from "react-router-dom";
 import { Root } from "./routes";
+import { useRouterLoader } from "./components/useRouterLoader/useRouterLoader";
 
 function App() {
+  const isLoading = useRouterLoader(500);
+
+  if (isLoading) {
+    return <Loader />;
+  }
   return (
     <div className="app-container">
-      <BrowserRouter>
-        <Root />
-      </BrowserRouter>
+      {isLoading && <Loader />}
+      <Root />
     </div>
   );
 }

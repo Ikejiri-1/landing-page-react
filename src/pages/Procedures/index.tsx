@@ -16,26 +16,28 @@ export function Procedures() {
       {
         id: 8,
         title: "Toxina Botulínica (Botox)",
-        text: "Descrição detalhada sobre Toxina Botulínica...",
+        text: "Conheça alguns dos benefícios que a Toxina Botulínica pode oferecer para você!",
         image: botoxImg,
       },
       {
         id: 9,
-        title: "Toxina Botulínica (Botox)",
-        text: "Descrição detalhada sobre Toxina Botulínica...",
+        title: "Benefícios do Botox:",
+        text: "Suaviza rugas e linhas de expressão\nMelhora o aspecto do olhar e do sorriso",
+        className: "multiline-text",
       },
     ],
     "preenchimento-facial-e-labial": [
       {
         id: 10,
         title: "Preenchimento (Facial e Labial)",
-        text: "Descrição detalhada sobre preenchimento...",
+        text: "Conheça alguns dos benefícios que o Preenchimento Facial e Labial pode oferecer para você!",
         image: preenchimentoImg,
       },
       {
         id: 11,
-        title: "Preenchimento (Facial e Labial)",
-        text: "Descrição detalhada sobre preenchimento...",
+        title: "Benefícios do Preenchimento:",
+        text: "Restaura volume e contornos faciais\n Suaviza rugas e linhas de expressão\n Corrige olheiras profundas\n Harmoniza lábios",
+        className: "multiline-text",
       },
     ],
     "fios-de-pdo": [
@@ -60,8 +62,8 @@ export function Procedures() {
       {
         id: 15,
         title: "Bioestimulador de Colágeno",
-        text: "Descrição detalhada sobre Bioestimulador de Colágeno...",
-        children: <h1>teste</h1>,
+        text: "Estimula a produção natural de colágeno\n Melhora a firmeza e elasticidade da pele\n Reduz flacidez facial",
+        className: "multiline-text",
       },
     ],
 
@@ -81,39 +83,40 @@ export function Procedures() {
       {
         id: 18,
         title: "Limpeza de Pele (Cross Peel)",
-        text: "Descrição detalhada sobre Limpeza de Pele...",
+        text: "Conheça alguns dos benefícios que a Limpeza de Pele pode oferecer para você!",
         image: crosspeelImg,
       },
       {
         id: 19,
-        title: "Limpeza de Pele (Cross Peel)",
-        text: "Descrição detalhada sobre Limpeza de Pele...",
+        title: "Benefícios da Limpeza de Pele:",
+        text: "Remove impurezas e células mortas\n Reduz cravos e previne acne\n Controla a oleosidade\n Melhora a textura e luminosidade",
+        className: "multiline-text",
       },
     ],
     "design-de-sobrancelha": [
       {
         id: 20,
         title: "Design de Sobrancelha",
-        text: "Descrição detalhada sobre Design de Sobrancelha...",
+        text: "Realce o seu olhar com sobrancelhas bem definidas e harmonizadas de acordo com o formato do seu rosto.",
         image: designSobrancelhaImg,
       },
-      {
-        id: 21,
-        title: "Design de Sobrancelha",
-        text: "Descrição detalhada sobre Design de Sobrancelha...",
-      },
+
+      //id: 21,
+      //title: "Design de Sobrancelha",
+      //text: "Descrição detalhada sobre Design de Sobrancelha...",
     ],
     "extensao-de-cilios": [
       {
         id: 22,
         title: "Extensão de Cílios",
-        text: "Descrição detalhada sobre Extensão de Cílios...",
+        text: "Veja como a extensão de cílios pode transformar o seu olhar e melhora a sua autoestima!",
         image: ciliosImg,
       },
       {
         id: 23,
         title: "Extensão de Cílios",
-        text: "Descrição detalhada sobre Extensão de Cílios...",
+        text: "Realça o olhar com naturalidade e elegância\n Técnicas personalizadas(clássica, híbrida, volume russo)\n Fios leves e confortáveis que não agridem os cílios naturais",
+        className: "multiline-text",
       },
     ],
     "alivio-da-dor-ozonioterapia": [

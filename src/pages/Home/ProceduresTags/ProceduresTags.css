@@ -12,4 +12,10 @@
   padding: 0.5em 1em;
   border-radius: 1em;
   font-size: 1em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+.procedures-tags-list-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 24px rgba(0, 0, 0, 0.5);
 }
