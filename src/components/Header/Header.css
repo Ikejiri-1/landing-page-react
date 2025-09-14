@@ -12,6 +12,11 @@ header {
 .logo {
   width: 300px;
   height: 150px;
+  border-radius: 1em;
+  transition: box-shadow 0.3s ease;
+}
+.logo:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
 }
 .button-list-container {
   display: flex;

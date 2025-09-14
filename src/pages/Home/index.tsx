@@ -30,10 +30,11 @@ const cardsContent = [
   },
   {
     id: 5,
-    title:
-      "Agende uma consulta e descubra como a ozonioterapia pode transformar sua vida!",
-    text: "",
+    title: "Quer agendar uma sessão?",
+    text: "Já pensou em cuidar do seu corpo com um método inovador, capaz de transformar sua saúde desde os primeiros dias? Dê o primeiro passo rumo a mais bem-estar e qualidade de vida!",
     children: <Form />,
+    strongText:
+      "Entre em contato com a gente! Estamos prontos para cuidar de você!",
   },
 ];
 

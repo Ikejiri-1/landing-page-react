@@ -29,7 +29,11 @@ export function Cards({ cards }: CardsProps) {
               <h2 className="card-title">{card.title}</h2>
               <p className={`card-text ${card.className || ""}`}>{card.text}</p>
               {card.strongText && (
-                <p className="text-strong">
+                <p
+                  className={`strong-text ${
+                    card.strongText ? "with-strong" : ""
+                  }`}
+                >
                   <strong>{card.strongText}</strong>
                 </p>
               )}
