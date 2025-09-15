@@ -10,7 +10,7 @@ import crosspeelImg from "/src/assets/img/crosspeel.png";
 import designSobrancelhaImg from "/src/assets/img/design.jpg";
 import microagulhamentoImg from "/src/assets/img/microagulhamento.png";
 import coloracaoImg from "/src/assets/img/coloracao.jpg";
-
+import PDOImg from "/src/assets/img/PDO.png";
 export function Procedures() {
   const { slug } = useParams();
   const proceduresData = {
@@ -46,12 +46,14 @@ export function Procedures() {
       {
         id: 12,
         title: "Fios de PDO",
-        text: "Descrição detalhada sobre Fios de PDO...",
+        text: "Conheça alguns dos benefícios que os Fios de PDO podem oferecer para você!",
+        image: PDOImg,
       },
       {
         id: 13,
-        title: "Fios de PDO",
-        text: "Descrição detalhada sobre Fios de PDO...",
+        title: "Benefícios",
+        text: "Ajudam na sustentação da pele\n Estimulam a produção de colágeno\n Rejuvenescimento facial\n Auxílio na redução de estrias e manchas na pele",
+        className: "multiline-text",
       },
     ],
     "bioestimulador-de-colageno": [
@@ -128,14 +130,14 @@ export function Procedures() {
     "alivio-da-dor-ozonioterapia": [
       {
         id: 24,
-        title: "Alívio da Dor (Ozonioterapia)",
-        text: "Descrição detalhada sobre Alívio da Dor...",
+        title: "Bursite (Ozonioterapia)",
+        text: "A ozonioterapia pode ajudar a aliviar a dor da bursite",
         image: bursiteImg,
       },
       {
         id: 25,
         title: "Tendinite (Ozonioterapia)",
-        text: "Descrição detalhada sobre Tendinite...",
+        text: "Assim como na bursite, a ozonioterapia pode ajudar a aliviar a dor da tendinite",
         image: tendiniteImg,
       },
     ],
