@@ -5,6 +5,11 @@
 }
 :root {
   --main-color: #bd96ae;
+  --sec-color: #b895bd;
+  --bg-color: #d6b6c9;
+  --j-color: #ab95bd;
+  --text-color: #7d8ca3;
+  --details-color: #9a7aa0;
 }
 
 ul {

@@ -8,6 +8,8 @@ import tendiniteImg from "/src/assets/img/tendinite.png";
 import ciliosImg from "/src/assets/img/cilios.png";
 import crosspeelImg from "/src/assets/img/crosspeel.png";
 import designSobrancelhaImg from "/src/assets/img/design.jpg";
+import microagulhamentoImg from "/src/assets/img/microagulhamento.png";
+import coloracaoImg from "/src/assets/img/coloracao.jpg";
 
 export function Procedures() {
   const { slug } = useParams();
@@ -72,6 +74,7 @@ export function Procedures() {
         id: 16,
         title: "Microagulhamento",
         text: "Descrição detalhada sobre Microagulhamento...",
+        image: microagulhamentoImg,
       },
       {
         id: 17,
@@ -101,9 +104,12 @@ export function Procedures() {
         image: designSobrancelhaImg,
       },
 
-      //id: 21,
-      //title: "Design de Sobrancelha",
-      //text: "Descrição detalhada sobre Design de Sobrancelha...",
+      {
+        id: 21,
+        title: "Coloração",
+        text: "Perfeita para realçar o olhar, a coloração uniformiza os fios, destaca o formato natural e garante sobrancelhas mais cheias e marcantes",
+        image: coloracaoImg,
+      },
     ],
     "extensao-de-cilios": [
       {

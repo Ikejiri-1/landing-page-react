@@ -15,6 +15,7 @@ const procedimentos = [
   { name: "Extensão de Cílios", slug: "extensao-de-cilios" },
   { name: "Alívio da Dor Ozonioterapia", slug: "alivio-da-dor-ozonioterapia" },
 ];
+
 export function ProceduresTags() {
   return (
     <>

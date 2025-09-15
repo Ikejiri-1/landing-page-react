@@ -20,7 +20,7 @@ header {
 }
 .button-list-container {
   display: flex;
-  gap: 1em;
+  gap: 2em;
 }
 .button-list-container li {
   position: relative;
@@ -30,29 +30,45 @@ header {
   position: absolute;
   top: 100%;
   left: -2em;
-  background: red;
+  background: var(--details-color);
   border-radius: 12px;
   z-index: 9999;
-  padding: 1em;
+
   list-style: none;
 }
 
 .dropdown-menu li {
   margin: 0.5rem 0;
+  border-bottom: 1px solid var(--bg-color);
 }
 
 .dropdown-menu a {
   text-decoration: none;
-  color: #333;
+  color: white;
   display: block;
   text-align: center;
-  padding: 0.5em;
+  padding: 1em;
 }
 
 .dropdown-menu a:hover {
-  color: #007bff;
+  color: var(--bg-color);
 }
 
 #footer {
   scroll-margin-top: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+  }
+  .button-list-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 1em 0;
+  }
+  .dropdown-menu a {
+    padding: 0.5em;
+    font-size: 0.8em;
+  }
 }

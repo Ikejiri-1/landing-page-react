@@ -3,11 +3,12 @@
   gap: 1em;
   flex-wrap: wrap;
   width: 60%;
-  margin: 0 auto;
-  padding-left: 2em;
+  margin: 2em auto;
+  text-align: center;
+  align-items: center;
 }
 .procedures-tags-list-item {
-  background-color: red;
+  background-color: var(--details-color);
   color: white;
   padding: 0.5em 1em;
   border-radius: 1em;
@@ -18,4 +19,11 @@
 .procedures-tags-list-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 24px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1024px) {
+  .procedures-tags-list {
+    align-items: center;
+    text-align: center;
+  }
 }

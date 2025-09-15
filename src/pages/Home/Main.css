@@ -1,15 +1,5 @@
 .main-container {
   display: flex;
-  width: 70%;
-  height: 80vh;
-  gap: 4em;
-  margin: 0 auto;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-.main-text-container {
-  display: flex;
   flex-direction: column;
   width: 100%;
   text-align: center;

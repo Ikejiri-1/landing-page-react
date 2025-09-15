@@ -2,9 +2,9 @@ footer {
   display: flex;
   width: 100%;
   justify-content: space-around;
-  background-color: red;
+  background-color: var(--main-color);
   color: white;
-  padding: 2em;
+  padding: 5em;
 }
 .footer-icons {
   width: 40px;
@@ -19,4 +19,19 @@ footer ul li {
   align-items: center;
   gap: 1em;
   margin-top: 2em;
+}
+
+footer p {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+  footer h1 {
+    text-align: center;
+  }
 }

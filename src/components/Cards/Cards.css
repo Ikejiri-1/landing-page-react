@@ -7,7 +7,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: red;
+  background-color: var(--bg-color);
   margin: 2em;
   border-radius: 1em;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
@@ -42,7 +42,7 @@
 .card-text {
   font-size: 1.2em;
   line-height: 150%;
-  padding: 0 4em;
+  padding: 0 2em;
 }
 .multiline-text {
   white-space: pre-wrap;
@@ -54,7 +54,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding-left: 5em;
 }
 
 .card-6,
@@ -107,9 +106,7 @@
 .card-15,
 .card-17,
 .card-19,
-.card-21,
 .card-23,
-.card-24,
 .card-25 {
   margin-left: auto;
   display: flex;
@@ -121,6 +118,69 @@
   height: 350px;
 }
 .card-1 img {
-  width: 400px;
+  width: 350px;
   height: 100px;
+}
+.card-title,
+.card-text,
+.strong-text {
+  color: var(--text-color);
+}
+.card-999 {
+  margin: 3em auto;
+  width: 60%;
+}
+.card-21 {
+  margin-left: auto;
+}
+.card-21 img {
+  transform: rotate(90deg);
+}
+.assign {
+  color: var(--text-color);
+}
+
+@media screen and (max-width: 1024px) {
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4,
+  .card-5,
+  .card-6,
+  .card-7,
+  .card-8,
+  .card-9,
+  .card-10,
+  .card-11,
+  .card-12,
+  .card-13,
+  .card-14,
+  .card-15,
+  .card-16,
+  .card-17,
+  .card-18,
+  .card-19,
+  .card-20,
+  .card-21,
+  .card-22,
+  .card-23,
+  .card-24,
+  .card-25 {
+    width: 100%;
+    margin: 3em auto;
+    flex-direction: column;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-text p {
+    padding: 0;
+  }
+  .card-999 {
+    width: 100%;
+  }
+  .card {
+    padding: 2em 0;
+  }
 }

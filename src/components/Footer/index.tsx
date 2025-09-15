@@ -29,7 +29,10 @@ export function Footer() {
           <ul>
             <li>
               <img className="footer-icons-clock" src={Clock} />
-              <p>Segunda-feira - Sexta-feira 09:00 - 18:00</p>
+              <p>
+                Segunda-feira - Sexta-feira
+                <br /> 09:00 - 18:00
+              </p>
             </li>
             <li>
               <img className="footer-icons-clock" src={Clock} />
