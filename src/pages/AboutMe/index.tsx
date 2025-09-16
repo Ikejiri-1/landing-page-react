@@ -1,6 +1,8 @@
 import { Cards } from "../../components/Cards";
 import aboutMeImg from "/src/assets/img/perfil_2.png";
 import imgDoutora from "/src/assets/img/perfil_1.png";
+import { SEO } from "../../components/SEO";
+import { seoMap } from "../../utils/SEOData";
 const cards = [
   {
     id: 6,
@@ -24,6 +26,11 @@ const cards = [
 export function AboutMe() {
   return (
     <>
+      <SEO
+        title={seoMap["/sobre-mim"].title}
+        description={seoMap["/sobre-mim"].description}
+        canonicalUrl="https://renovaestetica.com/sobre-mim"
+      />
       <div>
         <Cards cards={cards}></Cards>
       </div>

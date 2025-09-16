@@ -13,8 +13,12 @@ import coloracaoImg from "/src/assets/img/coloracao.png";
 import PDOImg from "/src/assets/img/PDO.png";
 import pLabialImg from "/src/assets/img/p-labial.png";
 import botoxPotesImg from "/src/assets/img/potes.jpg";
+import { SEO } from "../../components/SEO";
+import { getProcedureSEO } from "../../utils/SEOData";
+
 export function Procedures() {
-  const { slug } = useParams();
+  const { slug } = useParams<{ slug: string }>();
+  const seo = getProcedureSEO(slug!);
   const proceduresData = {
     "toxina-botulinica-botox": [
       {
@@ -159,6 +163,11 @@ export function Procedures() {
   const cards = Array.isArray(procedure) ? procedure : [procedure];
   return (
     <>
+      <SEO
+        title={seo.title}
+        description={seo.description}
+        canonicalUrl={`https://renovaestetica.com/procedimentos/${slug}`}
+      />
       <Cards cards={cards}></Cards>
     </>
   );

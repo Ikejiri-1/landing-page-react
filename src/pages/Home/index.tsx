@@ -1,9 +1,10 @@
 import "./Main.css";
-
 import { Cards } from "../../components/Cards";
 import { Form } from "../../components/Form";
 import cardImg from "/src/assets/img/ozonioterapia.png";
 import { ProceduresCard } from "./ProceduresCard";
+import { SEO } from "../../components/SEO";
+import { seoMap } from "../../utils/SEOData";
 
 const cardsContent = [
   {
@@ -41,6 +42,11 @@ const cardsContent = [
 export function Home() {
   return (
     <>
+      <SEO
+        title={seoMap["/"].title}
+        description={seoMap["/"].description}
+        canonicalUrl="https://renovaestetica.com/"
+      />
       <main>
         <div className="main-container">
           <ProceduresCard />
