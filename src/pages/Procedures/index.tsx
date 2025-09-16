@@ -25,7 +25,7 @@ export function Procedures() {
       },
       {
         id: 9,
-        title: "Benefícios do Botox:",
+        title: "Benefícios do Botox",
         text: "Suaviza rugas e linhas de expressão\nMelhora o aspecto do olhar e do sorriso",
         image: botoxPotesImg,
         className: "multiline-text",
@@ -39,7 +39,7 @@ export function Procedures() {
       },
       {
         id: 11,
-        title: "Benefícios do Preenchimento Facial:",
+        title: "Benefícios do Preenchimento Facial",
         text: "Restaura volume e contornos faciais\n Suaviza rugas e linhas de expressão\n Corrige olheiras profundas\n Harmoniza lábios",
         className: "multiline-text",
         image: preenchimentoImg,
@@ -102,7 +102,7 @@ export function Procedures() {
       },
       {
         id: 19,
-        title: "Benefícios da Limpeza de Pele:",
+        title: "Benefícios da Limpeza de Pele",
         text: "Remove impurezas e células mortas\n Reduz cravos e previne acne\n Controla a oleosidade\n Melhora a textura e luminosidade",
         className: "multiline-text",
       },
