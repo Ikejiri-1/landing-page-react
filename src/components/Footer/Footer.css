@@ -3,56 +3,77 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
   background-color: var(--main-color);
-  padding: 2em;
+  padding: 3em;
+  gap: 2em; /* ajuda a dar respiro entre as colunas */
 }
+
 .footer-icons {
   width: 40px;
   height: 40px;
 }
+
 .footer-icons-clock {
   width: 60px;
   height: 60px;
 }
+
 footer ul li {
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
   gap: 1em;
   margin-top: 2em;
+  text-align: center;
 }
+
 .insta {
   margin-left: 2em;
 }
 
+footer h1,
 footer p {
   color: white;
 }
+
 .address {
   text-align: center;
   width: 58%;
   margin: 0 auto;
 }
-.address-container {
-  text-align: center;
-}
-.time {
-  text-align: center;
-}
+
+.address-container,
+.time,
 .social-media {
   text-align: center;
 }
+
 .social-media ul li {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
+/* Tablet */
+@media screen and (max-width: 1024px) {
   footer {
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
+
   footer h1 {
     text-align: center;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  footer {
+    display: flex; /* muda para flex */
+    flex-direction: column; /* empilha os itens */
+    align-items: center; /* centraliza horizontalmente */
+    text-align: center; /* garante alinhamento do texto */
+    gap: 1.5em;
+  }
+
+  .address {
+    width: 100%; /* não precisa limitar largura no mobile */
   }
 }

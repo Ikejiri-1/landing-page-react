@@ -9,7 +9,7 @@ export function Footer() {
       <footer id="footer">
         <div className="social-media">
           <h1>Contatos:</h1>
-          <ul>
+          <ul className="social-media-list">
             <li>
               <img className="footer-icons" src={Wpp} alt="ícone do whatsapp" />
               <p>(35) 99810-1112</p>
@@ -26,9 +26,9 @@ export function Footer() {
         </div>
         <div className="time">
           <h1>Horários de funcionamento:</h1>
-          <ul>
+          <ul className="time-list">
             <li>
-              <img className="footer-icons-clock" src={Clock} />
+              <img className="footer-icons-clock clock-1" src={Clock} />
               <p>
                 Segunda-feira - Sexta-feira
                 <br /> 09:00 - 18:00

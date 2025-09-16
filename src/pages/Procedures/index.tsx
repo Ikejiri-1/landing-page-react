@@ -69,7 +69,7 @@ export function Procedures() {
       {
         id: 14,
         title: "Bioestimulador de Colágeno",
-        text: "Descrição detalhada sobre Bioestimulador de Colágeno...",
+        text: "Conheça alguns dos benefícios que o Bioestimulador de Colágeno pode oferecer para você!",
         image: bioImg,
       },
       {
