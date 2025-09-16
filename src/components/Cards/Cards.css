@@ -185,7 +185,9 @@
   .card-24,
   .card-25,
   .card-26,
-  .card-27 {
+  .card-27,
+  .card-28,
+  .card-29 {
     width: 100%;
     margin: 3em auto;
     flex-direction: column;
