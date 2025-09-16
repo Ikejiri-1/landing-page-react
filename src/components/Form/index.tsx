@@ -22,7 +22,7 @@ export function Form() {
     username: Yup.string().required("Nome obrigatório"),
   });
   const handleSubmit = (values: FormValues) => {
-    const phoneNumber = "+55 12 98121-1700";
+    const phoneNumber = "+55 35 99810-1112";
     const cleanPhone = phoneNumber.replace(/\D/g, "");
     const message = `Olá! Me chamo ${values.username}.
 Meu e-mail é: ${values.email}.
