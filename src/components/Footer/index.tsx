@@ -16,7 +16,7 @@ export function Footer() {
             </li>
             <li>
               <img
-                className="footer-icons"
+                className="footer-icons insta"
                 src={Inst}
                 alt="ícone do instagram"
               />
@@ -41,6 +41,16 @@ export function Footer() {
             <li>
               <img className="footer-icons-clock" src={Clock} />
               <p>Domingo (Fechado)</p>
+            </li>
+          </ul>
+        </div>
+        <div className="address-container">
+          <h1>Endereço:</h1>
+          <ul>
+            <li>
+              <p className="address">
+                Rua Adolfo Olinto, 310 - Sala 10 - Centro - Pouso Alegre
+              </p>
             </li>
           </ul>
         </div>

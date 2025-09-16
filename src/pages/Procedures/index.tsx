@@ -9,8 +9,10 @@ import ciliosImg from "/src/assets/img/cilios.png";
 import crosspeelImg from "/src/assets/img/crosspeel.png";
 import designSobrancelhaImg from "/src/assets/img/design.jpg";
 import microagulhamentoImg from "/src/assets/img/microagulhamento.png";
-import coloracaoImg from "/src/assets/img/coloracao.jpg";
+import coloracaoImg from "/src/assets/img/coloracao.png";
 import PDOImg from "/src/assets/img/PDO.png";
+import pLabialImg from "/src/assets/img/p-labial.png";
+import botoxPotesImg from "/src/assets/img/potes.jpg";
 export function Procedures() {
   const { slug } = useParams();
   const proceduresData = {
@@ -25,6 +27,7 @@ export function Procedures() {
         id: 9,
         title: "Benefícios do Botox:",
         text: "Suaviza rugas e linhas de expressão\nMelhora o aspecto do olhar e do sorriso",
+        image: botoxPotesImg,
         className: "multiline-text",
       },
     ],
@@ -33,13 +36,19 @@ export function Procedures() {
         id: 10,
         title: "Preenchimento (Facial e Labial)",
         text: "Conheça alguns dos benefícios que o Preenchimento Facial e Labial pode oferecer para você!",
-        image: preenchimentoImg,
       },
       {
         id: 11,
         title: "Benefícios do Preenchimento:",
         text: "Restaura volume e contornos faciais\n Suaviza rugas e linhas de expressão\n Corrige olheiras profundas\n Harmoniza lábios",
         className: "multiline-text",
+        image: preenchimentoImg,
+      },
+      {
+        id: 998,
+        title: "Benefícios do Preenchimento Labial",
+        text: "é um procedimento estético minimamente invasivo que usa o ácido hialurónico, uma substância naturalmente presente no corpo, para aumentar o volume dos lábios, definir seu contorno e corrigir assimetrias, proporcionando hidratação e um aspecto mais jovem.",
+        image: pLabialImg,
       },
     ],
     "fios-de-pdo": [
@@ -131,13 +140,13 @@ export function Procedures() {
       {
         id: 24,
         title: "Bursite (Ozonioterapia)",
-        text: "A ozonioterapia pode ajudar a aliviar a dor da bursite",
+        text: "Você sabia? A Ozonioterapia é uma aliada no tratamento da bursite, ajudando a reduzir dor e inflamação!",
         image: bursiteImg,
       },
       {
         id: 25,
         title: "Tendinite (Ozonioterapia)",
-        text: "Assim como na bursite, a ozonioterapia pode ajudar a aliviar a dor da tendinite",
+        text: "Sente dor no ombro ao levantar o braço? Pode ser tendinite! A Ozonioterapia é um tratamento natural que ajuda a aliviar a dor e recuperar os movimentos. Agende sua avaliação!",
         image: tendiniteImg,
       },
     ],

@@ -1,10 +1,9 @@
 footer {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 100%;
-  justify-content: space-around;
   background-color: var(--main-color);
-  color: white;
-  padding: 5em;
+  padding: 2em;
 }
 .footer-icons {
   width: 40px;
@@ -17,12 +16,34 @@ footer {
 footer ul li {
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   gap: 1em;
   margin-top: 2em;
+}
+.insta {
+  margin-left: 2em;
 }
 
 footer p {
   color: white;
+}
+.address {
+  text-align: center;
+  width: 58%;
+  margin: 0 auto;
+}
+.address-container {
+  text-align: center;
+}
+.time {
+  text-align: center;
+}
+.social-media {
+  text-align: center;
+}
+.social-media ul li {
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
