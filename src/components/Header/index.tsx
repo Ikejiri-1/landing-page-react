@@ -19,6 +19,8 @@ const procedures = [
   "Design de Sobrancelha",
   "Extensão de Cílios ",
   "Alívio da Dor (Ozonioterapia)",
+  "Intradermoterapia capilar",
+  "Ozonioterapia para estrias",
 ];
 
 const slugify = (text: string) => {

@@ -13,8 +13,12 @@ import coloracaoImg from "/src/assets/img/coloracao.png";
 import PDOImg from "/src/assets/img/PDO.png";
 import pLabialImg from "/src/assets/img/p-labial.png";
 import botoxPotesImg from "/src/assets/img/potes.jpg";
+import microag2Img from "/src/assets/img/micro-2.png";
+import intradermoterapiaImg from "/src/assets/img/intradermo-1.png";
+import intradermoterapia2Img from "/src/assets/img/intradermo-2.png";
 import { SEO } from "../../components/SEO";
 import { getProcedureSEO } from "../../utils/SEOData";
+import otpEstriasImg from "/src/assets/img/otpestrias.png";
 
 export function Procedures() {
   const { slug } = useParams<{ slug: string }>();
@@ -88,13 +92,15 @@ export function Procedures() {
       {
         id: 16,
         title: "Microagulhamento",
-        text: "Descrição detalhada sobre Microagulhamento...",
+        text: "Conheça alguns dos benefícios que o Microagulhamento pode oferecer para você!",
         image: microagulhamentoImg,
       },
       {
         id: 17,
-        title: "Microagulhamento",
-        text: "Descrição detalhada sobre Microagulhamento...",
+        title: "Benefícios do Microagulhamento",
+        text: "Rejuvenescimento da pele e melhora da flacidez\n Redução e tratamento de rugas e estrias\n Clareamento de manchas e hipercromias\n Melhora geral da textura e viço da pele",
+        className: "multiline-text",
+        image: microag2Img,
       },
     ],
     "limpeza-de-pele-cross-peel": [
@@ -152,6 +158,34 @@ export function Procedures() {
         title: "Tendinite (Ozonioterapia)",
         text: "Sente dor no ombro ao levantar o braço? Pode ser tendinite! A Ozonioterapia é um tratamento natural que ajuda a aliviar a dor e recuperar os movimentos. Agende sua avaliação!",
         image: tendiniteImg,
+      },
+    ],
+    "intradermoterapia-capilar": [
+      {
+        id: 26,
+        title: "Benefícios da intradermoterapia",
+        text: "Mesoterapia ou intradermoterapia capilar é um tratamento que consiste na aplicação de microinjeções de substâncias como vitaminas, minoxidil e fatores de crescimento diretamente no couro cabeludo para combater a queda de cabelo e estimular o crescimento capilar",
+        image: intradermoterapiaImg,
+      },
+      {
+        id: 27,
+        title: "Intradermoterapia Capilar",
+        text: "A intradermoterapia capilar é um procedimento que consiste na aplicação de microinjelções no couro cabeludo, contendo uma combinação de vitaminas, aminoácidos, medicamentos e outros nutrientes que ajudam a fortalecer os folículos capilares",
+
+        image: intradermoterapia2Img,
+      },
+    ],
+    "ozonioterapia-para-estrias": [
+      {
+        id: 28,
+        title: "Ozonioterapia para Estrias",
+        text: "Você sabia que o ozônio pode ser um grande aliado no tratamento das estrias?",
+        image: otpEstriasImg,
+      },
+      {
+        id: 29,
+        title: "Benefícios",
+        text: "A aplicação do ozônio melhora a circulação sanguínea, estimula a produção de colágeno e elastina, favorecendo a regeneração da pele. Com isso as estrias ficam mais finas, suavizadas e menos visíveis, trazendo mais uniformidade e firmeza para a sua pele. É um tratamento natural, seguro e com ótimos resultados!",
       },
     ],
   };

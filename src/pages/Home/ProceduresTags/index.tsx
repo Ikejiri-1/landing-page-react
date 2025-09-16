@@ -14,6 +14,8 @@ const procedimentos = [
   { name: "Design de Sobrancelha", slug: "design-de-sobrancelha" },
   { name: "Extensão de Cílios", slug: "extensao-de-cilios" },
   { name: "Alívio da Dor Ozonioterapia", slug: "alivio-da-dor-ozonioterapia" },
+  { name: "Intradermoterapia capilar", slug: "intradermoterapia-capilar" },
+  { name: "Ozonioterapia para estrias", slug: "ozonioterapia-para-estrias" },
 ];
 
 export function ProceduresTags() {

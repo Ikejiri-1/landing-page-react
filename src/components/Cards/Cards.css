@@ -98,6 +98,9 @@
 .card-23,
 .card-24,
 .card-25,
+.card-26,
+.card-27,
+.card-28,
 .card-998 {
   display: grid;
   grid-template-columns: 0.5fr 1fr;
@@ -108,7 +111,6 @@
 
 .card-13,
 .card-15,
-.card-17,
 .card-19,
 .card-23 {
   margin-left: auto;
@@ -138,7 +140,10 @@
 }
 .card-21,
 .card-11,
-.card-9 {
+.card-9,
+.card-17,
+.card-27,
+.card-29 {
   margin-left: auto;
 }
 .card-1 img,
@@ -178,7 +183,9 @@
   .card-22,
   .card-23,
   .card-24,
-  .card-25 {
+  .card-25,
+  .card-26,
+  .card-27 {
     width: 100%;
     margin: 3em auto;
     flex-direction: column;
