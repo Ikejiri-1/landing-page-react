@@ -101,7 +101,7 @@ Meu telefone é: ${values.tel}.
           </div>
 
           <button type="submit" disabled={isSubmitting}>
-            Entrar
+            Enviar
           </button>
         </form>
       )}
