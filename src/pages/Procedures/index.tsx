@@ -39,7 +39,7 @@ export function Procedures() {
       },
       {
         id: 11,
-        title: "Benefícios do Preenchimento:",
+        title: "Benefícios do Preenchimento Facial:",
         text: "Restaura volume e contornos faciais\n Suaviza rugas e linhas de expressão\n Corrige olheiras profundas\n Harmoniza lábios",
         className: "multiline-text",
         image: preenchimentoImg,
