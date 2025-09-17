@@ -195,14 +195,30 @@ export function Procedures() {
     return <h1>Procedimento não encontrado!</h1>;
   }
   const cards = Array.isArray(procedure) ? procedure : [procedure];
+  const firstImage = cards[0]?.image;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalProcedure",
+    name: seo.title,
+    description: seo.description,
+    image: firstImage,
+    url: `https://renovaestetica.com/procedimentos/${slug}`,
+  };
+
   return (
     <>
       <SEO
         title={seo.title}
         description={seo.description}
         canonicalUrl={`https://renovaestetica.com/procedimentos/${slug}`}
+        ogTitle={seo.title}
+        ogDescription={seo.description}
+        ogImage={firstImage}
+        twitterCard="summary_large_image"
+        jsonLd={jsonLd}
       />
-      <Cards cards={cards}></Cards>
+      <Cards cards={cards} />
     </>
   );
 }

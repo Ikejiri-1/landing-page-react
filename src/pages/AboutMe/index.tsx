@@ -2,7 +2,7 @@ import { Cards } from "../../components/Cards";
 import aboutMeImg from "/src/assets/img/perfil_2.png";
 import imgDoutora from "/src/assets/img/perfil_1.png";
 import { SEO } from "../../components/SEO";
-import { seoMap } from "../../utils/SEOData";
+
 const cards = [
   {
     id: 6,
@@ -24,15 +24,33 @@ const cards = [
 ];
 
 export function AboutMe() {
+  const firstImage = cards[0].image;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Dra. Natália de Jesus",
+    description:
+      "Enfermeira com especialização em Obstetrícia e Ginecologia e experiência em Estética Avançada e Ozonioterapia.",
+    image: firstImage,
+    url: "https://renovaestetica.com/sobre-mim",
+  };
+
   return (
     <>
       <SEO
-        title={seoMap["/sobre-mim"].title}
-        description={seoMap["/sobre-mim"].description}
+        title="Sobre Mim - Renova Estética"
+        description="Conheça a Dra. Natália de Jesus, especialista em Estética Avançada e Ozonioterapia."
         canonicalUrl="https://renovaestetica.com/sobre-mim"
+        ogTitle="Sobre Mim - Renova Estética"
+        ogDescription="Conheça a Dra. Natália de Jesus, especialista em Estética Avançada e Ozonioterapia."
+        ogImage={firstImage}
+        twitterCard="summary_large_image"
+        jsonLd={jsonLd}
       />
+
       <div>
-        <Cards cards={cards}></Cards>
+        <Cards cards={cards} />
       </div>
     </>
   );

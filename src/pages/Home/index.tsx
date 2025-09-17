@@ -4,7 +4,6 @@ import { Form } from "../../components/Form";
 import cardImg from "/src/assets/img/ozonioterapia.png";
 import { ProceduresCard } from "./ProceduresCard";
 import { SEO } from "../../components/SEO";
-import { seoMap } from "../../utils/SEOData";
 
 const cardsContent = [
   {
@@ -40,20 +39,37 @@ const cardsContent = [
 ];
 
 export function Home() {
+  const firstImage = cardsContent[0].image;
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    name: "Home - Renova Estética",
+    description:
+      "Cuide da sua saúde e bem-estar com tratamentos inovadores e seguros.",
+    image: firstImage,
+    url: "https://renovaestetica.com/",
+  };
+
   return (
     <>
       <SEO
-        title={seoMap["/"].title}
-        description={seoMap["/"].description}
+        title="Renova Estética - Cuidados de Saúde e Estética"
+        description="Cuide da sua saúde e bem-estar com tratamentos inovadores e seguros."
         canonicalUrl="https://renovaestetica.com/"
+        ogTitle="Renova Estética - Cuidados de Saúde e Estética"
+        ogDescription="Cuide da sua saúde e bem-estar com tratamentos inovadores e seguros."
+        ogImage={firstImage}
+        twitterCard="summary_large_image"
+        jsonLd={jsonLd}
       />
+
       <main>
         <div className="main-container">
           <ProceduresCard />
         </div>
-
         <div className="cards-container">
-          <Cards cards={cardsContent}></Cards>
+          <Cards cards={cardsContent} />
         </div>
       </main>
     </>
